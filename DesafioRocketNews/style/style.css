@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
+}
+
+:root {
+    --body-bg-color:  #121214;
+    --text-color: #dadadd;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #A8A8A8;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--body-bg-color);
+}
+
+.section {
+    width: 100%;
+    min-height: 100vh;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+main .content {
+    width: 50%;
+    height: 100vh;
+    padding-left: 2.5rem;
+}
+
+.content img {
+    margin-top: 3.125rem;
+    width: 389px;
+    height: 5.875rem;
+}
+
+.content .text-info {
+    margin-top: 5.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+}
+
+.content .text-info h3{
+    color: var(--title-color);
+    font-size: 1.5rem;
+}
+
+.content .text-info  p.strong{
+    word-spacing: 3px;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.content .text-info > p{
+    color: var(--text-color);
+    font-size: 0.875rem;
+    font-weight: normal;
+}
+
+.content .form {
+    margin-top: 3.25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    color: var(--form-color);
+}
+
+div .input {
+    position: relative;
+    width: 798px;
+    height: 48px;
+    border: none;
+    border-radius: 1px;
+    top: 17px;
+    background-color: #FFFFFF;
+    border-left: 8px solid #04D361;
+}
+
+div .input::after {
+    content: '';
+    background-image:  url('../assets/send.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    color: #FFFFFF;
+    height: 48px;
+    width: 50px;
+    position: absolute;
+    background-color: #8257E5;
+}
+
+.form input {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding-left: 1rem;
+}
+
+main .link {
+    margin-top: 3.125rem;
+    color: #8257E5;
+}
+
+main .link::after {
+    content: url('../assets/arrow-right.svg');
+    position: absolute;
+}
+
+
+main .side-background {
+    background-image: url('../assets/read_news.jpg');
+    background-position: -300px top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100vh;
+}
+
+
+
